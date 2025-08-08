@@ -1,3 +1,5 @@
+#<img width="1000" height="1048" alt="Logotipo_UIS" src="https://github.com/user-attachments/assets/8988a266-81fd-47d7-b9c8-4653d853be25" />
+
 # COMUNICACIONES 2 
 
 # Lab Comu UIS

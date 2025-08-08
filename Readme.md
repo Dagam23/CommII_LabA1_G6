@@ -1,2 +1,11 @@
-Hola mucho gusto aqui se encontrara una prueba de repositorio
-Hola soy yo
+# *COMUNICACIONES 2 
+
+Lab Comu UIS
+
+## Integrantes
+
+- Brayan Ayala
+- Daniel Gonzalez
+
+### No se
+

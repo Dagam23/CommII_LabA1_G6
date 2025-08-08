@@ -1,4 +1,4 @@
-### COMUNICACIONES 2 
+# COMUNICACIONES 2 
 
 Lab Comu UIS
 
@@ -7,5 +7,5 @@ Lab Comu UIS
 - Brayan Ayala
 - Daniel Gonzalez
 
-# No se
+### No se
 

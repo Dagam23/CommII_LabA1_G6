@@ -1,4 +1,4 @@
-### *COMUNICACIONES 2 
+### COMUNICACIONES 2 
 
 Lab Comu UIS
 

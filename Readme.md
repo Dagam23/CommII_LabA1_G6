@@ -1,6 +1,6 @@
 # COMUNICACIONES 2 
 
-Lab Comu UIS
+# Lab Comu UIS
 
 ## Integrantes
 

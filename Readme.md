@@ -1,10 +1,12 @@
-#  <img width="100" height="100" alt="Logotipo_UIS" src="https://github.com/user-attachments/assets/8988a266-81fd-47d7-b9c8-4653d853be25" /> Universidad Industrial de Santander
+#  <img width="100" height="100" alt="Logotipo_UIS" src="https://github.com/user-attachments/assets/8988a266-81fd-47d7-b9c8-4653d853be25" /> Universidad 
 
-# COMUNICACIONES 2 
+# Industrial de Santander
 
-# Lab Comu UIS
+## COMUNICACIONES 2 
 
-## Integrantes
+## Lab Comu UIS
+
+### Integrantes
 
 - Brayan Ayala
 - Daniel Gonzalez

@@ -10,7 +10,3 @@
 
 - Brayan Ayala
 - Daniel Gonzalez
-
-#### No se
-
-#### no se x2

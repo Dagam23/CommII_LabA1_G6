@@ -12,4 +12,7 @@
 - Daniel Gonzalez
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Practica_1

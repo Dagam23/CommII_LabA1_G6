@@ -12,8 +12,3 @@
 - Daniel Gonzalez
 
 
-Prueba Ulloa Y Quintero
-
-
-Nota: Compañeros hay que cerrar sesion antes de salir de laboratorio, dormidos
-

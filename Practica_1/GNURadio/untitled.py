@@ -26,6 +26,8 @@ import threading
 import untitled_epy_block_0 as epy_block_0  # embedded python block
 import untitled_epy_block_1 as epy_block_1  # embedded python block
 import untitled_epy_block_2 as epy_block_2  # embedded python block
+import untitled_epy_block_2_0 as epy_block_2_0  # embedded python block
+import untitled_epy_block_2_1 as epy_block_2_1  # embedded python block
 
 
 
@@ -215,6 +217,72 @@ class untitled(gr.top_block, Qt.QWidget):
 
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_win)
+        self.qtgui_number_sink_0_3_1 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_3_1.set_update_time(0.10)
+        self.qtgui_number_sink_0_3_1.set_title('RMS')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_3_1.set_min(i, -1)
+            self.qtgui_number_sink_0_3_1.set_max(i, 1)
+            self.qtgui_number_sink_0_3_1.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_3_1.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_3_1.set_label(i, labels[i])
+            self.qtgui_number_sink_0_3_1.set_unit(i, units[i])
+            self.qtgui_number_sink_0_3_1.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_3_1.enable_autoscale(False)
+        self._qtgui_number_sink_0_3_1_win = sip.wrapinstance(self.qtgui_number_sink_0_3_1.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_3_1_win)
+        self.qtgui_number_sink_0_3_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_3_0.set_update_time(0.10)
+        self.qtgui_number_sink_0_3_0.set_title('RMS')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_3_0.set_min(i, -1)
+            self.qtgui_number_sink_0_3_0.set_max(i, 1)
+            self.qtgui_number_sink_0_3_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_3_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_3_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0_3_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0_3_0.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_3_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_3_0_win = sip.wrapinstance(self.qtgui_number_sink_0_3_0.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_3_0_win)
         self.qtgui_number_sink_0_3 = qtgui.number_sink(
             gr.sizeof_float,
             0,
@@ -248,6 +316,72 @@ class untitled(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0_3.enable_autoscale(False)
         self._qtgui_number_sink_0_3_win = sip.wrapinstance(self.qtgui_number_sink_0_3.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_3_win)
+        self.qtgui_number_sink_0_2_1 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_2_1.set_update_time(0.10)
+        self.qtgui_number_sink_0_2_1.set_title('Media Cuadratica')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_2_1.set_min(i, -1)
+            self.qtgui_number_sink_0_2_1.set_max(i, 1)
+            self.qtgui_number_sink_0_2_1.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_2_1.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_2_1.set_label(i, labels[i])
+            self.qtgui_number_sink_0_2_1.set_unit(i, units[i])
+            self.qtgui_number_sink_0_2_1.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_2_1.enable_autoscale(False)
+        self._qtgui_number_sink_0_2_1_win = sip.wrapinstance(self.qtgui_number_sink_0_2_1.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_2_1_win)
+        self.qtgui_number_sink_0_2_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_2_0.set_update_time(0.10)
+        self.qtgui_number_sink_0_2_0.set_title('Media Cuadratica')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_2_0.set_min(i, -1)
+            self.qtgui_number_sink_0_2_0.set_max(i, 1)
+            self.qtgui_number_sink_0_2_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_2_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_2_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0_2_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0_2_0.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_2_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_2_0_win = sip.wrapinstance(self.qtgui_number_sink_0_2_0.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_2_0_win)
         self.qtgui_number_sink_0_2 = qtgui.number_sink(
             gr.sizeof_float,
             0,
@@ -281,6 +415,72 @@ class untitled(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0_2.enable_autoscale(False)
         self._qtgui_number_sink_0_2_win = sip.wrapinstance(self.qtgui_number_sink_0_2.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_2_win)
+        self.qtgui_number_sink_0_1_1 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_1_1.set_update_time(0.10)
+        self.qtgui_number_sink_0_1_1.set_title('Potencia Promedio')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_1_1.set_min(i, -1)
+            self.qtgui_number_sink_0_1_1.set_max(i, 1)
+            self.qtgui_number_sink_0_1_1.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_1_1.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_1_1.set_label(i, labels[i])
+            self.qtgui_number_sink_0_1_1.set_unit(i, units[i])
+            self.qtgui_number_sink_0_1_1.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_1_1.enable_autoscale(False)
+        self._qtgui_number_sink_0_1_1_win = sip.wrapinstance(self.qtgui_number_sink_0_1_1.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_1_1_win)
+        self.qtgui_number_sink_0_1_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_1_0.set_update_time(0.10)
+        self.qtgui_number_sink_0_1_0.set_title('Potencia Promedio')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_1_0.set_min(i, -1)
+            self.qtgui_number_sink_0_1_0.set_max(i, 1)
+            self.qtgui_number_sink_0_1_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_1_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_1_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0_1_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0_1_0.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_1_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_1_0_win = sip.wrapinstance(self.qtgui_number_sink_0_1_0.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_1_0_win)
         self.qtgui_number_sink_0_1 = qtgui.number_sink(
             gr.sizeof_float,
             0,
@@ -314,6 +514,72 @@ class untitled(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0_1.enable_autoscale(False)
         self._qtgui_number_sink_0_1_win = sip.wrapinstance(self.qtgui_number_sink_0_1.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_1_win)
+        self.qtgui_number_sink_0_0_1 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_0_1.set_update_time(0.10)
+        self.qtgui_number_sink_0_0_1.set_title('Desviacion Estandar')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_0_1.set_min(i, -1)
+            self.qtgui_number_sink_0_0_1.set_max(i, 1)
+            self.qtgui_number_sink_0_0_1.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_0_1.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_0_1.set_label(i, labels[i])
+            self.qtgui_number_sink_0_0_1.set_unit(i, units[i])
+            self.qtgui_number_sink_0_0_1.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_0_1.enable_autoscale(False)
+        self._qtgui_number_sink_0_0_1_win = sip.wrapinstance(self.qtgui_number_sink_0_0_1.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_0_1_win)
+        self.qtgui_number_sink_0_0_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.qtgui_number_sink_0_0_0.set_update_time(0.10)
+        self.qtgui_number_sink_0_0_0.set_title('Desviacion Estandar')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.qtgui_number_sink_0_0_0.set_min(i, -1)
+            self.qtgui_number_sink_0_0_0.set_max(i, 1)
+            self.qtgui_number_sink_0_0_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.qtgui_number_sink_0_0_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_number_sink_0_0_0.set_label(i, labels[i])
+            self.qtgui_number_sink_0_0_0.set_unit(i, units[i])
+            self.qtgui_number_sink_0_0_0.set_factor(i, factor[i])
+
+        self.qtgui_number_sink_0_0_0.enable_autoscale(False)
+        self._qtgui_number_sink_0_0_0_win = sip.wrapinstance(self.qtgui_number_sink_0_0_0.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_number_sink_0_0_0_win)
         self.qtgui_number_sink_0_0 = qtgui.number_sink(
             gr.sizeof_float,
             0,
@@ -347,11 +613,79 @@ class untitled(gr.top_block, Qt.QWidget):
         self.qtgui_number_sink_0_0.enable_autoscale(False)
         self._qtgui_number_sink_0_0_win = sip.wrapinstance(self.qtgui_number_sink_0_0.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_number_sink_0_0_win)
+        self.epy_block_2_1 = epy_block_2_1.blk(example_param=3.0)
+        self.epy_block_2_0 = epy_block_2_0.blk(example_param=3.0)
         self.epy_block_2 = epy_block_2.blk(example_param=3.0)
         self.epy_block_1 = epy_block_1.blk(example_param=2.0)
         self.epy_block_0 = epy_block_0.blk(example_param=1.0)
         self.blocks_throttle2_0 = blocks.throttle( gr.sizeof_float*1, samp_rate, True, 0 if "auto" == "auto" else max( int(float(0.1) * samp_rate) if "auto" == "time" else int(0.1), 1) )
         self.analog_sig_source_x_0 = analog.sig_source_f(samp_rate, analog.GR_SQR_WAVE, 120, 1, (-0.5), 0)
+        self.Media_b_1 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.Media_b_1.set_update_time(0.10)
+        self.Media_b_1.set_title('Media')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.Media_b_1.set_min(i, -1)
+            self.Media_b_1.set_max(i, 1)
+            self.Media_b_1.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.Media_b_1.set_label(i, "Data {0}".format(i))
+            else:
+                self.Media_b_1.set_label(i, labels[i])
+            self.Media_b_1.set_unit(i, units[i])
+            self.Media_b_1.set_factor(i, factor[i])
+
+        self.Media_b_1.enable_autoscale(False)
+        self._Media_b_1_win = sip.wrapinstance(self.Media_b_1.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._Media_b_1_win)
+        self.Media_b_0 = qtgui.number_sink(
+            gr.sizeof_float,
+            0,
+            qtgui.NUM_GRAPH_HORIZ,
+            1,
+            None # parent
+        )
+        self.Media_b_0.set_update_time(0.10)
+        self.Media_b_0.set_title('Media')
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        units = ['', '', '', '', '',
+            '', '', '', '', '']
+        colors = [("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"),
+            ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black"), ("black", "black")]
+        factor = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+
+        for i in range(1):
+            self.Media_b_0.set_min(i, -1)
+            self.Media_b_0.set_max(i, 1)
+            self.Media_b_0.set_color(i, colors[i][0], colors[i][1])
+            if len(labels[i]) == 0:
+                self.Media_b_0.set_label(i, "Data {0}".format(i))
+            else:
+                self.Media_b_0.set_label(i, labels[i])
+            self.Media_b_0.set_unit(i, units[i])
+            self.Media_b_0.set_factor(i, factor[i])
+
+        self.Media_b_0.enable_autoscale(False)
+        self._Media_b_0_win = sip.wrapinstance(self.Media_b_0.qwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._Media_b_0_win)
         self.Media_b = qtgui.number_sink(
             gr.sizeof_float,
             0,
@@ -395,13 +729,25 @@ class untitled(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_throttle2_0, 0), (self.epy_block_1, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.epy_block_2, 0))
         self.connect((self.blocks_throttle2_0, 0), (self.qtgui_time_sink_x_0, 0))
+        self.connect((self.epy_block_0, 0), (self.epy_block_2_0, 0))
         self.connect((self.epy_block_0, 0), (self.qtgui_time_sink_x_0_0, 0))
+        self.connect((self.epy_block_1, 0), (self.epy_block_2_1, 0))
         self.connect((self.epy_block_1, 0), (self.qtgui_time_sink_x_0_0_0, 0))
         self.connect((self.epy_block_2, 0), (self.Media_b, 0))
         self.connect((self.epy_block_2, 4), (self.qtgui_number_sink_0_0, 0))
         self.connect((self.epy_block_2, 3), (self.qtgui_number_sink_0_1, 0))
         self.connect((self.epy_block_2, 1), (self.qtgui_number_sink_0_2, 0))
         self.connect((self.epy_block_2, 2), (self.qtgui_number_sink_0_3, 0))
+        self.connect((self.epy_block_2_0, 0), (self.Media_b_0, 0))
+        self.connect((self.epy_block_2_0, 4), (self.qtgui_number_sink_0_0_0, 0))
+        self.connect((self.epy_block_2_0, 3), (self.qtgui_number_sink_0_1_0, 0))
+        self.connect((self.epy_block_2_0, 1), (self.qtgui_number_sink_0_2_0, 0))
+        self.connect((self.epy_block_2_0, 2), (self.qtgui_number_sink_0_3_0, 0))
+        self.connect((self.epy_block_2_1, 0), (self.Media_b_1, 0))
+        self.connect((self.epy_block_2_1, 4), (self.qtgui_number_sink_0_0_1, 0))
+        self.connect((self.epy_block_2_1, 3), (self.qtgui_number_sink_0_1_1, 0))
+        self.connect((self.epy_block_2_1, 1), (self.qtgui_number_sink_0_2_1, 0))
+        self.connect((self.epy_block_2_1, 2), (self.qtgui_number_sink_0_3_1, 0))
 
 
     def closeEvent(self, event):

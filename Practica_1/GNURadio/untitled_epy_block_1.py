@@ -14,9 +14,8 @@ class blk(gr.sync_block):
 
     def work(self,input_items,output_items):
         x = input_items[0]  
-        y0 = output_items[0]  
-        N = len(x)
-        diff = np.cumsum(x) - self.e_Acum 
-        self.e_Acum = diff[N-1]
+        y0 = output_items[0]
+        diff = np.diff(np.concatenate(([self.e_Acum],x)))
         y0[:] = diff 
+        self.e_Acum = x[-1]
         return len(y0)

@@ -4,7 +4,7 @@
 
 ## COMUNICACIONES 2 
 
-## Lab Comu UIS
+## Lab Comu UIS Practica 2
 
 ### Integrantes
 

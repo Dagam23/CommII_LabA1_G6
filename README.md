@@ -8,6 +8,9 @@
 
 ### Integrantes
 
-- Brayan Ayala
+- Johan Garzon
 - Daniel Gonzalez
-- Ricardo 
+- Andrea
+- Monica
+- Sebastian
+- Meyer

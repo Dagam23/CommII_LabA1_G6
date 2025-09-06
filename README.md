@@ -2,15 +2,12 @@
 
 # Universidad Industrial de Santander
 
-## COMUNICACIONES 2 
+## Intrumentación 
 
-## Lab Comu UIS
+## Software Y Procesamiento de Datos
 
 ### Integrantes
 
-- Johan Garzon
+- Brayan Ayala
 - Daniel Gonzalez
-- Andrea
-- Monica
-- Sebastian
-- Meyer
+- Ricardo 

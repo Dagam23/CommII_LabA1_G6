@@ -4,8 +4,6 @@
 
 ## LAB COMUNICACIONES 
 
-## Software Y Procesamiento de Datos
-
 ### Integrantes
 
 - Brayan Ayala

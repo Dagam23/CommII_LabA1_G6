@@ -2,7 +2,7 @@
 
 # Universidad Industrial de Santander
 
-## Intrumentación 
+## LAB COMUNICACIONES
 
 ## Software Y Procesamiento de Datos
 

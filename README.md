@@ -10,4 +10,3 @@
 
 - Brayan Ayala
 - Daniel Gonzalez
-- Ricardo 
